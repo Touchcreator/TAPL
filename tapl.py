@@ -33,13 +33,13 @@ while i < len(contents):
         q.appendleft(str(q[0]) + str(q[1]))
     elif (contents[i] == "i"):
         q.appendleft(str(input(q[0])))
-    elif (contents[i] == "a"):
+    elif (contents[i] == "+"):
         q.appendleft(q[1] + q[0])
-    elif (contents[i] == "s"):
+    elif (contents[i] == "-"):
         q.appendleft(q[1] - q[0])
-    elif (contents[i] == "m"):
+    elif (contents[i] == "*"):
         q.appendleft(q[1] * q[0])
-    elif (contents[i] == "d"):
+    elif (contents[i] == "/"):
         q.appendleft(q[1] / q[0])
     elif (contents[i] == "t"):
         q.appendleft(q[int(q[0])])
