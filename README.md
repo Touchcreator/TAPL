@@ -1,6 +1,10 @@
 # TAPL
 ## How to use:
 TAPL is a stack based programming language, so data is stored in the background and you can run a command to use the data.
+### Running:
+Windows: `py tapl.py {filename}.tapl`
+
+Unix-based OS: `python3 tapl.py {filename}.tapl`
 ### Simple Commands:
 `"{data}"` - This command stores a string.
 
