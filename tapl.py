@@ -41,4 +41,6 @@ while i < len(contents):
         q.appendleft(q[1] * q[0])
     elif (contents[i] == "d"):
         q.appendleft(q[1] / q[0])
+    elif (contents[i] == "t"):
+        q.appendleft(q[int(q[0])])
     i+=1
