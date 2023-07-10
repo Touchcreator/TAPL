@@ -10,9 +10,9 @@ Windows: `py tapl.py {filename}.tapl` or `tapl {filename}.tapl`
 
 Unix-based OS: `python3 tapl.py {filename}.tapl`
 ### Simple Commands:
-`"{data}"` - This command stores a string.
+`"<data>"` - This command stores a string.
 
-`[{data}]` - This command stores an integer.
+`[<data>]` - This command stores an integer.
 
 `p` - This command prints the latest data.
 
@@ -29,6 +29,8 @@ Unix-based OS: `python3 tapl.py {filename}.tapl`
 `*` - This command multiplies the two latest numbers in the dataset.
 
 `/` - This command divides the two latest numbers in the dataset. It starts from the second latest number to the latest.
+
+`{<code>}` - This command runs Python code, incase you ever need to.
 
 ### Complicated Commands:
 `t`: Lets say you had a program like this: `"hi" "hi2" "hi3" "hi4"`, and you wanted to print hi. Right now, you can't, because its buried in the dataset. However, if you added `[4] t` to the program, making it `"hi" "hi2" "hi3" "hi4" [4] t`, now, "hi" is at the front of the data, and all you need to do is add `p` to print it. Making the full command `"hi" "hi2" "hi3" "hi4" [4] tp`
