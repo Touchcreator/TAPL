@@ -1,4 +1,8 @@
 # TAPL
+## Why You Should Use TAPL:
+- ~~I made it~~
+- The syntax is pretty simple
+- You don't need to worry about formatting
 ## How to use:
 TAPL is a stack based programming language, so data is stored in the background and you can run a command to use the data.
 ### Running:
