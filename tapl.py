@@ -3,7 +3,6 @@ from collections import deque
 
 filename = sys.argv[1]
 file = open(filename, 'r')
-ignore = [" ", "\n", "\t"]
 contents = file.read()
 
 q = deque()
@@ -50,9 +49,4 @@ while i < len(contents):
         q.appendleft(q[1] / q[0])
     elif (contents[i] == "t"):
         q.appendleft(q[int(q[0])])
-    else:
-        if contents[i]  not in ignore:
-            print("Error at character " + str(i) + " " + str(contents[i]))
-            print("That isn't a command!")
-            break
     i+=1
