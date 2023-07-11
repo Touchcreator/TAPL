@@ -32,7 +32,20 @@ Unix-based OS: `python3 tapl.py {filename}.tapl`
 
 `{<code>}` - This command runs Python code, incase you ever need to.
 
+`>` - This command compares the two latest numbers. It goes from the second latest number to the latest. If true, it adds the value `True` to the dataset, if false, it adds `False`
+
+`<` - The same as the above command, but its less than.
+
+`=` - This command checks if the two latest values are the same, if so, it adds `True` to the dataset, if not, it adds `False`.
+
 ### Complicated Commands:
 `t`: Lets say you had a program like this: `"hi" "hi2" "hi3" "hi4"`, and you wanted to print hi. Right now, you can't, because its buried in the dataset. However, if you added `[4] t` to the program, making it `"hi" "hi2" "hi3" "hi4" [4] t`, now, "hi" is at the front of the data, and all you need to do is add `p` to print it. Making the full command `"hi" "hi2" "hi3" "hi4" [4] tp`
+
+`:`: In order to use this command, you must have a number before it. If the second latest value in the dataset is equal to `True`, then nothing happens, but if the second latest value is equal to `False`, it skips the amount of characters equivalent to the first number in the dataset.
+
+`;`: The opposite of `:`
+
+# Compiling:
+After 1 billion years, you've finally finished your program. But your friend doesn't have TAPL installed! (what a loser) This is OK though. As TAPL 0.3.0 and above come with a converter to Python. In order to convert, you would run `py compile.py <yourcode>.tapl <target>.py`. The issue however, is that the `:` and `;` commands break when you use this method. If your code has an if command, you must manually fix the code. Once you are done, you can use a tool such as Pyinstaller to convert to an EXE.
 
 

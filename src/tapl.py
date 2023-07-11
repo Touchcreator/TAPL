@@ -49,4 +49,20 @@ while i < len(contents):
         q.appendleft(q[1] / q[0])
     elif (contents[i] == "t"):
         q.appendleft(q[int(q[0])])
+    elif (contents[i] == ">"):
+        q.appendleft(int(q[1]) > int(q[0]))
+    elif (contents[i] == "<"):
+        q.appendleft(int(q[1]) < int(q[0]))
+    elif (contents[i] == "="):
+        q.appendleft(str(q[1]) == str(q[0]))
+    elif (contents[i] == ":"):
+        if q[1] == True:
+            pass
+        else:
+            i+=int(q[0])
+    elif (contents[i] == ";"):
+        if q[1] != True:
+            pass
+        else:
+            i+=int(q[0])
     i+=1

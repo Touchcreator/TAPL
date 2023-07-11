@@ -1,0 +1,1 @@
+python -m PyInstaller src/tapl.py --distpath ./output --onefile

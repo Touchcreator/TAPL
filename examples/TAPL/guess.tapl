@@ -1,0 +1,8 @@
+"Guess my name: " i
+"Touchcreator" =
+[27] :"That's right!" p {exit()} "Wrong!" p
+
+{
+import os
+os.system("python tapl.py guess.tapl")
+}
